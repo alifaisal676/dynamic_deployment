@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://<EC2_PUBLIC_IP>:5000/api/message")
+    fetch("http://44.205.8.127:5000/api/message")
       .then(res => res.json())
       .then(data => setMessage(data.message));
   }, []);
